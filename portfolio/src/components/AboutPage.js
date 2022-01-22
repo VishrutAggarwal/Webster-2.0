@@ -10,11 +10,10 @@ class AboutPage extends Component {
                 <h1 id = "last-name">Doe</h1>
             </section>
             <section className = "about">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat
-          nulla perspiciatis ipsam voluptatem temporibus provident reiciendis.
-          Magnam, maiores autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, natus.
-                </p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Consectetur adipisicing elit.</p>
+                <p>Totam fugiat nulla perspiciatis.</p>
+                <p>Ipsam voluptatem temporibus reiciendis.</p>
             </section>
         </div>
         <aside>

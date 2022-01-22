@@ -36,6 +36,7 @@
 .about {
     margin-left: 10vw;
     max-width: 30vw;
+    font-size: 1.3rem;
 }
 
 #last-name {
@@ -45,7 +46,7 @@
 /*Global*/
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: linear-gradient(to bottom, #6e529d 0%,#d97b93 100%);
     color: var(--text-color);
@@ -95,6 +96,7 @@ section {
 #exp-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2.5rem;
     margin: 35vh 5vw 20vh 0;
     max-height: 35rem;
@@ -154,6 +156,10 @@ section {
     padding-top: 7.5vh;
 }
 
+.edu-school {
+    font-size: 2rem;
+}
+
 .edu-block {
     margin: 7vh;
 }
@@ -176,7 +182,11 @@ section {
     width: 40px;
     height: 40px;
     margin: 5px;
-    margin-bottom: -7px;
+}
+
+#contact-page a {
+    flex-direction: row;
+    align-items: center;
 }
 
 .social {
@@ -189,21 +199,21 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 30.5vh;
     gap: 15vw;
 }
 
 .social a{
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     text-decoration: none;
-    margin: 10px;
     font-size: 1.8rem;
     color: white;
 }
 
 .social a:hover {
     background-color: rgb(255, 255, 255);
-    color: #121212;
+    color: #000;
     border-radius: 10px;
 }
 
@@ -273,9 +283,116 @@ a {
     bottom: 0;
     width: 100%;
     height: 30px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 7rem;
     background: #d97b93;
     color: #ffffff8e;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        gap: 2rem;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .name {
+        max-width: 60vw;
+        margin-top: -13vh;
+    }
+
+    .about {
+        max-width: 60vw;
+        margin-left: 0;
+        margin-top: -15vh;
+        margin-bottom: -10vh;
+    }
+
+    #last-name {
+        padding-left: 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    #experience-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #exp-heading {
+        margin-bottom: 0;
+        margin-left: 0;
+        max-height: 7rem;
+        max-width: 30rem;
+    }
+
+    #exp-content {
+        margin: 0;
+        margin-bottom: 15vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 35rem;
+        max-width: 30rem;
+    }
+
+    #edu-page {
+        flex-direction: column-reverse;
+        padding-top: 2vh;
+        align-items: center;
+        padding-bottom: 15vh;
+    }
+
+    .edu-block {
+        margin: 3vh 0;
+        max-width: 65%;
+    }
+
+    .edu-heading {
+        margin-right: 0;
+        margin-bottom: 4vh;
+    }
+
+    .edu-duration {
+        padding: 1vh 0;
+    }
+
+    .edu-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projec-tiles {
+        display: grid;
+        grid-template-areas: "tile1"
+                             "tile2"
+                             "tile3"
+                             "tile4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 0.5rem;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact-page {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 15vw;
+    }
+
+    #footer {
+        height: 50px;
+    }
 }
