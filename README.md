@@ -38,5 +38,5 @@ This challenge is meant to test our Front-end Web Development Knowledge.
 - LinkedIn - [Vishrut Aggarwal](https://www.linkedin.com/in/vishrut-aggarwal/)
 
 ### Akanksha Kushwaha:
-- Github - [@VishrutAggarwal](https://github.com/aku1310)
-- LinkedIn - [Vishrut Aggarwal](https://www.linkedin.com/in/akankshakushwaha/)
+- Github - [@aku1310](https://github.com/aku1310)
+- LinkedIn - [Akanksha Kushwaha](https://www.linkedin.com/in/akankshakushwaha/)
